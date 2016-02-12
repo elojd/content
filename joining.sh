@@ -1,13 +1,14 @@
-#Copying first two lines of "$1" to "headers"
+#Copying from one file to another 
 
-echo "Enter extension:"
-read ext
-if [ -f "./headers" ]
-then
-	rm headers
-fi
-for fname in "$1/*.$ext"
+read tmp;	#input
+
+while [ "$tmp" != "END" ]
 do
-	echo "Adding two first lines of $fname"
-	head -2 $fname >> headers
-done
+	if [ -f "$tmp" ]	#if it's file
+	then
+		cat "$tmp" >> join.dat	#content of "$tmp" copy to "join.dat"
+	else
+		echo "Arg is not file"
+	fi	#end of "if"
+	read tmp; #don't forget to read again
+done #end of "while"
