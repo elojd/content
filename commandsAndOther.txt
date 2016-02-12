@@ -1,0 +1,45 @@
+		---=== Format of CLI (Command Line Interface ) commands ===---
+[doSomething] [how] [toFiles]
+[doSomething] [how] [sourceFile] [destintionFile]
+
+			       ---=== Some dirs ===---
+"/" - root directory
+"~" - home directory
+"." - relative path to current dir
+	example: ./condorn/source
+".." - relative path to parent dir
+	example: ../condorn/source
+"/bin" - contains basic tools and other programms
+"/dev" - contains files for different hardware devices
+"/home" - user dirs
+"/proc" - virtual dir which contains files(informations) about system 
+"/temp" - contains temporary dirs
+
+			       ---=== Some commands ===---
+"pwd" - prints absolute path to current dir
+"cd <path>" - change current dir
+	example: cd ~, cd /
+"ls -l" - prints content of current dir with more details
+"ls -a" - prints also and hidden content of current dir
+	example: ls -l ~, ls -al ~/Documents
+"mkdir <path>" - creats dir in given path
+	example: mkdir ~/Documents/test
+"cp [-R] <fromPath> [<toPath>]" - copying files and dirs
+	example: cp ~/Documents/exp.txt ~/Documet/test
+	( "[-R]" - stands for recursion; if you have some files in dir that you 
+	want to copy, you must use "-R" )
+"mv [-R] <fromPath> [<toPath>]" - moving files and dirs
+"rm [-R] <path>" - deleting files and dirs
+"rmdir <dirPath>" - deleting files and dirs
+"find <dirPath> -name <fileName> -print" - searchs in given dir and his subdirs
+"locate <name" - locating file or dir
+"grep <stringPattern> <filePattern>" - prints files witch contains given string
+"cat <fileName>" - prints content of file
+"more <fileName>" - prints content of file page by page
+"tail [-n] <fileName>" - prints n last lines
+"head [-n] <fileName>" - prints n first lines
+ 
+
+
+
+
